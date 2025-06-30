@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridfall Tower Defense</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body { background-color: #111; color: #fff; text-align: center; }
+        #pygame-container { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Gridfall Tower Defense</h1>
+    <p>Loading game... This may take a moment.</p>
+    
+    <py-config>
+        packages = ["pygame-ce"]
+        [[fetch]]
+        files = ["./Tower Defence2.py", "./tower defence backround music.mp3"]
+    </py-config>
+
+    <div id="pygame-container"></div>
+
+    <py-script src="./Tower Defence2.py"></py-script>
+
+</body>
+</html>
